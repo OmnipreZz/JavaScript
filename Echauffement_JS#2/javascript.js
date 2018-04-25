@@ -2,7 +2,7 @@
 function question1(){
   var cheval = prompt("Quel est la couleur du cheval blanc d'Henri 4?");
   
-  if(cheval === "blanc"){
+  if(cheval.toLowerCase() === "blanc"){
     alert ("Bien!")
     return (question2());
   }else{
@@ -14,7 +14,7 @@ function question1(){
 function question2(){
   var nain = prompt("Combien y'a t'il de 7 nains");
   
-  if(nain === "7"){
+  if(nain === "7" || nain.toLowerCase() === "sept"){
     return ("Bravo champion!");
   }else{
     alert ("Bouhh tu es nul !! essaye encore..")
