@@ -1,14 +1,14 @@
 
-function TonNom() {
+function nom() { //ici ma fonction
 
-var nom = prompt("Comment tu t'appelles ?");
+var id = prompt ("Comment tu t'appelles?"); //ici ma variable
 
-if (nom.length <= 10 && nom.length >= 2) {
-	return ("Bonjour, " + nom);
+if(id.length <10 && id.length >1){ //ici ma condition (si id entre 1 et 10 lettres return bonjour sinon retour a la function nom())
+  return("Bonjour, " + id + "!");
 }else{
-	return ("Non valide");
+  return(nom());
 }
-};
+}
 
-alert(TonNom());
+alert(nom()); //appelle ma fonction dans une boite alert
 
