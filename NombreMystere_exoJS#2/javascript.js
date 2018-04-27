@@ -9,6 +9,13 @@ Pouvoir choisir le nombre de tentatives
 
 */
 
-function getRamdonInt(){
-	var random = Math.floor(Math.random()*10);
+function random(){
+	var aleatoire = Math.floor(Math.random()*10);
+	console.log (aleatoire);
 }
+
+function question(){
+  var 
+}
+	
+	random()
