@@ -8,14 +8,26 @@ Pouvoir choisir les nombres min et max
 Pouvoir choisir le nombre de tentatives
 
 */
-
-function random(){
+function random() {
 	var aleatoire = Math.floor(Math.random()*10);
-	console.log (aleatoire);
+	return (aleatoire);
 }
 
-function question(){
-  var 
+
+function myst() {
+  var chiffre = prompt("Entrer un chiffre");
+  if (aleatoire == parseInt(chiffre)) {
+    alert("Bravo");
+  } else if (aleatoire < parseInt(chiffre)) {
+    alert("C'est +");
+    myst();
+  } else if (aleatoire > parseInt(chiffre)) {
+    alert("C'est -");
+    myst();
+  } else {
+    myst();
+  }
 }
-	
-	random()
+
+random();
+myst();
