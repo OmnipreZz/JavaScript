@@ -120,3 +120,25 @@ function additionne(nbr1, nbr2) {
 
 var prompt1 = prompt("Votre nombre 1");
 var prompt2 = prompt("Votre nombre 2");
+
+
+
+                              // Objets
+
+
+
+
+function Personne(nom, age, sexe) {
+	this.nom = nom;
+	this.age = age;
+	this.sexe = sexe;
+}
+
+var utilisateur1 = new Personne("Paul", 25, "M");
+var utilisateur2 = new Personne("Matthieu", 17, "M");
+
+utilisateur2.nom = "jean";
+
+console.log(utilisateur1);
+console.log(utilisateur2);
+
